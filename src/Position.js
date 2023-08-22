@@ -11,10 +11,18 @@ function Position() {
     setSelectedRace(raceName);
     setLoading(true);
     setPlotImage(null);
+    const formData = new FormData();
+    formData.append('formName', raceName);
+
 
     if (raceName) {
-      const response = await fetch(`http://127.0.0.1:5000/get_race_image?race=${raceName}`);
-      const responseData = await response.json();
+      
+      const response = await fetch('https://testing-mqi0.onrender.com/create_json', {
+        method: 'POST',
+        body: formData
+    });
+
+    const responseData = await response.json();
 
       if (responseData.plot_image) {
         setPlotImage(`data:image/png;base64,${responseData.plot_image}`);
