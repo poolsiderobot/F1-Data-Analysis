@@ -1,0 +1,44 @@
+  
+.nav-bar-li
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+body{
+
+    background-color: #151519;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+
+#main-heading
+{
+    
+    color:bisque;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3.5vw; 
+    margin: 0 auto; 
+}
+
+#tyre {
+    width: 75px; /* Adjust the width of the tire image */
+    height: auto;
+    position: absolute;
+    animation:resetTire 4s linear forwards;;
+    transform-origin: left center;
+  }
+  
+
+
+  @keyframes resetTire {
+    0% {
+      transform: translateX(calc(100vw - 100px))rotate(360deg);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  
