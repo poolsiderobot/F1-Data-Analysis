@@ -1,0 +1,32 @@
+
+.navbar {
+    background-color: rgb(53, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  
+  .nav-l{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin: 0 10px;
+    font-family: rajdhani,sans-serif;
+    font-size: larger;
+  }
+  
+  .nav-item a {
+    text-decoration:none;
+    color: rgb(170, 155, 22);
+    transition: color 0.3s;
+  }
+  
+  .nav-item a:hover {
+    color: rgb(243, 228, 142);
+  }
+  

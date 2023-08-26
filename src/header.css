@@ -22,23 +22,24 @@ body{
     margin: 0 auto; 
 }
 
+#header
+{
+display: flex;
+
+
+}
+#tyre
+{
+  width:75px;
+}
+
+#Header {
+  display: flex; 
+  align-items: center; 
+}
+
 #tyre {
-    width: 75px; /* Adjust the width of the tire image */
-    height: auto;
-    position: absolute;
-    animation:resetTire 4s linear forwards;;
-    transform-origin: left center;
-  }
-  
+  margin-right: 10px; 
+}
 
 
-  @keyframes resetTire {
-    0% {
-      transform: translateX(calc(100vw - 100px))rotate(360deg);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-  
-  
