@@ -17,7 +17,7 @@ function Position() {
 
     if (raceName) {
            
-      const response = await fetch('http://127.0.0.1:5000/create_json', {
+      const response = await fetch('https://testing-mqi0.onrender.com/create_json', {
         method: 'POST',
         body: formData
     });

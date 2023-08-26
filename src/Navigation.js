@@ -13,7 +13,7 @@ const Navigation = () => {
             <Link to="/position">Position Data</Link>
           </li>
           <li className="nav-item">
-            <Link to="/lap-telemetry">Lap Telemetry</Link>
+            <Link to="/laps">Lap Telemetry</Link>
           </li>
           <li className="nav-item">
             <Link to="/wdc-standings">WDC Standings</Link>
